@@ -1,10 +1,10 @@
 /*
 Copyright 2015, modulex-component@1.0.4
 MIT Licensed
-build time: Wed, 04 Feb 2015 09:39:48 GMT
+build time: Wed, 04 Feb 2015 14:07:33 GMT
 */
-define("kg/component/0.0.1/control", ["kg/xtemplate/4.1.3/runtime","util","node","event-dom/gesture/basic","event-dom/gesture/tap","base","ua","feature"], function(require, exports, module) {
-var xtemplateRuntime = require("kg/xtemplate/4.1.3/runtime");
+define("kg/component/0.0.1/control", ["kg/xtemplate/4.1.4/runtime","util","node","event-dom/gesture/basic","event-dom/gesture/tap","base","ua","feature"], function(require, exports, module) {
+var xtemplateRuntime = require("kg/xtemplate/4.1.4/runtime");
 var _util_ = require("util");
 var _node_ = require("node");
 var eventDomGestureBasic = require("event-dom/gesture/basic");

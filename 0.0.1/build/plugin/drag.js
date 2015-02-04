@@ -1,7 +1,7 @@
 /*
 Copyright 2015, modulex-component@1.0.4
 MIT Licensed
-build time: Wed, 04 Feb 2015 09:39:48 GMT
+build time: Wed, 04 Feb 2015 14:07:33 GMT
 */
 define("kg/component/0.0.1/plugin/drag", ["dd"], function(require, exports, module) {
 var dd = require("dd");

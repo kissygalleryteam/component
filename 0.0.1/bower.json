@@ -1,0 +1,29 @@
+{
+    "name": "modulex-component",
+    "author": "yiminghe <yiminghe@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/kissyteam/component.git"
+    },
+    "ignore": [
+        "**/*",
+        "!build/**/*",
+        "!lib/**/*",
+        "!docs/**/*",
+        "!meta/**/*",
+        "!index.js"
+    ],
+    "dependencies": {
+        "modulex": "*",
+        "modulex-util": "modulex-util#1.x",
+        "modulex-node": "modulex-node#1.x",
+        "modulex-event-dom": "modulex-event-dom#1.x",
+        "modulex-base": "modulex-base#1.x",
+        "modulex-ua": "modulex-ua#1.x",
+        "modulex-feature": "modulex-feature#1.x",
+        "xtemplate": "xtemplate#3.x",
+        "modulex-dd": "modulex-dd#1.x",
+        "modulex-resizable": "modulex-resizable#1.x"
+    }
+}
