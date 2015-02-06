@@ -79,6 +79,8 @@ function modulexToKissy(str, filepath) {
 				  .replace(/"(component)\//g, '"kg/$1/0.0.1/')
 				  // 增加 xtemplate 版本号
 				  .replace(/"(xtemplate)\//g, '"kg/$1/4.1.4/')
+				  // 增加 dd 版本号
+				  .replace(/"(dd)\//g, '"kg/$1/0.1.1/')
 
 				  // 移除个模块版本号
 				  .replace(/\b(\w+\.)+version\s*=\s*(['"])\d+\.\d+\.\d+\2;/g, '')
@@ -127,11 +129,11 @@ gulp.task('tag', function (done) {
 
 var wrapper = require('gulp-wrapper');
 var date = new Date();
-var header = ['/*',
+var header = ['//!',
         'Copyright ' + date.getFullYear() + ', ' + packageInfo.name + '@' + packageInfo.version,
-        packageInfo.license + ' Licensed',
+        packageInfo.license + ' Licensed,',
         'build time: ' + (date.toGMTString()),
-    '*/', ''].join('\n');
+    '\n'].join(' ');
     
 gulp.task('build', ['lint','xtpl'], function () {
     var mods = {
@@ -180,7 +182,9 @@ gulp.task('build', ['lint','xtpl'], function () {
             .pipe(gulp.dest(path.resolve(build,dirname.replace(/component\/*/, ''))))
             .pipe(filter(base + '.js'))
             .pipe(replace(/@DEBUG@/g, ''))
-            .pipe(uglify())
+            .pipe(uglify({
+				preserveComments: 'some'
+			 }))
 			.pipe(rename(function(path){
 				 path.extname = '-min.js';
 			 }))

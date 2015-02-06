@@ -1,1 +1,2 @@
+//! Copyright 2015, kissy-gallery-component@0.0.1 MIT Licensed, build time: Fri, 06 Feb 2015 03:48:10 GMT 
 define("kg/component/0.0.1/plugin/drag",["dd"],function(n,t,e){var o,i=n("dd");o=function(n){function t(){var n=this.component,t=n.$el.offset();n.setInternal("xy",[t.left,t.top])}var e=i;return n=e.Draggable.extend({pluginId:"component/plugin/drag",pluginBindUI:function(n){this.set("node",n.$el),this.start(),this.component=n,this.on("dragend",t)},pluginDestructor:function(){this.destroy()}},{ATTRS:{move:{value:1},groups:{value:!1}}})}(),e.exports=o});

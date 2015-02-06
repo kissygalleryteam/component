@@ -1,8 +1,4 @@
-/*
-Copyright 2015, modulex-component@1.0.4
-MIT Licensed
-build time: Wed, 04 Feb 2015 14:07:33 GMT
-*/
+//! Copyright 2015, kissy-gallery-component@0.0.1 MIT Licensed, build time: Fri, 06 Feb 2015 03:48:10 GMT 
 define("kg/component/0.0.1/extension/content-box", ["kg/xtemplate/4.1.4/runtime"], function(require, exports, module) {
 var xtemplateRuntime = require("kg/xtemplate/4.1.4/runtime");
 /*
