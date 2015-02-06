@@ -80,7 +80,7 @@ function modulexToKissy(str, filepath) {
 				  // 增加 xtemplate 版本号
 				  .replace(/"(xtemplate)\//g, '"kg/$1/4.1.4/')
 				  // 增加 dd 版本号
-				  .replace(/"(dd)\//g, '"kg/$1/0.1.1/')
+				  .replace(/"(dd)"/g, '"kg/$1/0.0.1/index"')
 
 				  // 移除个模块版本号
 				  .replace(/\b(\w+\.)+version\s*=\s*(['"])\d+\.\d+\.\d+\2;/g, '')

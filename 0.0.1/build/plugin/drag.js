@@ -1,6 +1,6 @@
-//! Copyright 2015, kissy-gallery-component@0.0.1 MIT Licensed, build time: Fri, 06 Feb 2015 03:48:10 GMT 
-define("kg/component/0.0.1/plugin/drag", ["dd"], function(require, exports, module) {
-var dd = require("dd");
+//! Copyright 2015, kissy-gallery-component@0.0.1 MIT Licensed, build time: Fri, 06 Feb 2015 03:49:55 GMT 
+define("kg/component/0.0.1/plugin/drag", ["kg/dd/0.0.1/index"], function(require, exports, module) {
+var dd = require("kg/dd/0.0.1/index");
 /*
 combined modules:
 component/plugin/drag
